@@ -7,7 +7,7 @@ package za.ac.cput.Password;
 
 /**
  *
- * @author Siseko Zinyo
+ * @author Siseko Zinyo 
  */
 public class check {
     public static boolean isvalidpassword (String str){
