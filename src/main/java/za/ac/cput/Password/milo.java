@@ -11,6 +11,7 @@ package za.ac.cput.Password;
  */
 public class milo {
 public static void main(String[]args){
-System.out.println("Lets get his project done!");
+System.out.println("Welcome to your First Trial on Milo's Company Video Game!");
+System.out.println("Hope you going to enjoy my first demo to an Game!x_x");
 }
 }
