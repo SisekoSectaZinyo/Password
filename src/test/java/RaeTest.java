@@ -36,16 +36,71 @@ public class RaeTest {
     public void tearDown() {
     }
     
-    
-    public void max()
-    {
-        int num1 = 3;
-        int num2 = 4;
-        
-        int sum = num1 + num2;
-        
-        AssertEquals(7,8);
+    private static class rae {
+
+        public rae() {
+        }
     }
+
+    private static class apple {
+
+        public apple() {
+        }
+    }
+
+    private static class grape {
+
+        public grape() {
+        }
+    }
+    
+    
+    public class TestClass {
+    
+    private rae name;
+    private apple P;
+    private grape R;
+
+    @BeforeEach
+    public void setUpClass(grape grape) {
+        name = new rae();
+        P = new apple();
+        R = grape; 
+    }
+
+     
+     @Test
+     public void objectEquality() {
+        assertSame(name, R);
+    }
+     
+     
+      @Test
+     public void objectIdentity() {
+        assertEquals(name, R);
+    }
+     
+      @Test
+     public void failingTest() {
+         fail("failed test");
+        assertEquals(name, R);
+    }
+     
+      @Test
+      @Timeout (100)       
+      public void timeoutTest() 
+        throws InterruptedException {
+        while (true) {
+            Thread.sleep(400);
+    }
+      }    
+   
+      @Test
+      @Disabled("Disabled test")      
+      public void DisableTest() {
+       }
+    }
+    
     
    
     // TODO add test methods here.
@@ -54,9 +109,7 @@ public class RaeTest {
     // @Test
     // public void hello() {}
 
-    private void AssertEquals(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }
 
 
